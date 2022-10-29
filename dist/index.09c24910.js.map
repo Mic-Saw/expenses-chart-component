@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MAAM,MAAM,GAAG,EAAE,CAAC,MAAM,CAAC,SAAS,CAAC,AAAC;AAEpC,OAAO,CAAC,GAAG,CAAC,MAAM,CAAC,CAAC;AACpB,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAC","sources":["src/js/script.js"],"sourcesContent":["const canvas = d3.select('.canvas');\n\nconsole.log(canvas);\nconsole.log('Hello');"],"names":[],"version":3,"file":"index.09c24910.js.map","sourceRoot":"/__parcel_source_root/"}

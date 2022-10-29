@@ -1,0 +1,64 @@
+@use '../abstracts/variables';
+
+.main {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:54rem;
+    height: 66rem;
+
+    @media (max-width:560px) {
+        width:34.3rem;
+        height:53.4rem;
+    }
+
+    &--top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 12.5rem;
+        padding-left: 3.2rem;
+        padding-right: 3.9rem;
+        background-color: variables.$soft-red;
+        border-radius: 2rem;
+        color: white;
+
+        @media(max-width:560px) {
+            height: 9.7rem;
+            padding-left: 2rem;
+            padding-right:2.4rem;
+        }
+    }
+
+    &--bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:51rem;
+        padding:3.2rem 2.7rem 3.95rem 4rem;
+        background-color:variables.$pale-orange;
+        border-radius: 2rem;
+
+        @media(max-width:560px) {
+            height:42.1rem;
+            padding:2.4rem 2rem;
+        }
+
+        &__summary {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 3.2rem;
+            border-top: 1px solid variables.$cream;
+
+            div+div {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                
+                h3 {
+                    text-align: right;            
+                }
+            }
+        }
+    }
+}
